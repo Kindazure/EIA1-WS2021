@@ -53,8 +53,13 @@ li {
 
 .grid{
     padding: 10px;
+    width: 80%;
     display: grid;
     font-size: 30px;
     color: #404040;
     grid-template-columns:auto auto;
+}
+
+.grid-item img{
+    width: 80px;
 }
