@@ -1,0 +1,73 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:20px;
+    background-image: url(forest2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#top{
+    text-align: left;
+}
+
+#logo {
+    color:#000000;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+
+#navigation a{
+    color:#818181;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+#navigation a:hover{
+    color: #115E33;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+}
+
+#aboutme{
+    font-size: 30px;
+    padding: 10px;
+}
+.flex img{
+    float: left;
+}
+
+#abmetext{
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+    float: none;
+
+}
+
+.grid{
+    display: grid;
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    grid-template-columns:auto auto auto;
+}
+
+.item1{
+    grid-row: 1/6;
+    
+}
