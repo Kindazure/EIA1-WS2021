@@ -1,0 +1,124 @@
+body{
+    font-family: sans-serif;
+    background: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.06),
+    rgba(0,0,0,.03) 1px,
+    rgb(255, 255, 247) 1px,
+    rgb(255, 255, 247) 3px
+    );    
+}
+
+li{
+    display: inline;
+}
+
+
+.navigationlink,.active{
+    background-color: #b9aef5;
+    color: #fdfbf2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px; 
+}
+
+
+.active {
+    background-color: #3b0191;
+}
+
+.navigationlink:hover,.active:hover{
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    float: right;
+}
+
+.top{
+    background: rgb(215, 215, 215);
+    border-radius: 0px 0px 400px 400px;
+    height: 400px;
+    color:#3b0191;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5%;
+    margin-top: -50px;
+    position: relative;
+}
+
+
+
+:not(ul){
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.icon{
+    width: 55%;
+}
+
+.logo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    bottom: -20px;
+    left: -110px;
+    
+}
+
+a.logo{
+    opacity: .5;
+    width: 60%;
+}
+
+a.logo:hover{
+    opacity: 1;
+}
+
+.logotext {
+    position: relative;
+    bottom: 90px;
+    right: -110px;
+    font-size: large;
+    color: black;
+    width: 40%;
+}
+
+a {
+    text-decoration: none;
+}
+
+input{
+    color: white;
+    background-color: gray;
+    border: none;
+    margin-bottom: 2px;
+    width: 50%;
+    padding-bottom: 25px;
+    font-size: large;
+}
+
+::placeholder{
+    color: white;
+    font-size: large;
+}
+
+.larissabild{
+    width: 200px;
+    
+}
+
+.larissatext{
+    font-size: large;
+    color: gray;
+    position: relative;
+    left: 250px;
+    top: -200px;
+    font-weight: bold;
+}
