@@ -1,0 +1,104 @@
+body{
+    background-image: url("bg.png");
+
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.busch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-45%, -35%);
+
+}
+
+.pinguin{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(0%, 10%);
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 100%);
+}
+
+p {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 50%);
+    width: 80%;
+    font-size: 140%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+li a.active{
+    background-color: #4CAF50;
+}
+
+.menu{
+    display: none;
+    position: fixed;
+    min-width: 1px;
+    z-index: 1;
+}
+
+.menu a {
+    color: black;
+    background-color: #4d4d4d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover{
+    background-color: rgb(66, 66, 66);
+}
+
+.stat:hover .menu{
+    display: block;
+}
+
+.stat{
+    cursor: pointer;
+}
