@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carbon Dioxide Emissions</title>
+    <link rel="stylesheet" href="css/stylea6.css">
+    <script src="scripts/tsa6.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/europe.png" class="europe" onclick="change(3)">
+        <img src="images/northamerica.png" class="northamerica" onclick="change(4)">
+        <img src="images/southamerica.png" class="southamerica" onclick="change(2)">
+        <img src="images/africa.png" class="africa" onclick="change(1)">
+        <img src="images/asia.png" class="asia" onclick="change(5)">
+        <img src="images/australia.png" class="australia" onclick="change(6)">
+    </nav>
+
+    <h1>
+        Carbon Dioxide Emissions in <span id="titleRegion">Europe</span>
+    </h1>
+
+            
+    <div class="chartWrapper">
+        <div class="chart" id="chart"></div>
+    </div>
+    
+    <main>
+        <section>
+            <h2 id="emission_abs">4209.3kg</h2>
+            <p>Emission absolute of Europe in 2018</p>
+        </section>
+        
+        <section>
+            <h2 id="emission_rel">13.53%</h2>
+            <p>Relative to total world's emission</p>
+        </section>
+        
+        <section>
+            <h2 id="growth_rate_rel">-15.23%</h2>
+            <p>Growth rate between 2008 and 2018 (in %)</p>
+        </section>
+        
+        <section>
+            <h2 id="growth_rate_abs">-756.40kg</h2>
+            <p>Growth rate between 2008 and 2018 (absolute)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Values in kg CO2 per TJ. Source https://www.statista.com/</p>
+    </footer>
+    
+</body>
+</html>
