@@ -12,21 +12,27 @@ var list = [
     [2018, 1235.5, 1261.5, 4209.3, 6035.6, 16274.1, 2100.5]
 ];
 var column = ["Year", "Africa", "South America", "Europe", "North America", "Asia", "Australia"];
-function percentage(row, col) {
+function percentage1(row, col) {
     var out = 0;
     for (var i = 1; i < list[row].length; i++) {
         out = out + list[row][i];
     }
     return list[row][col] / out * 100;
 }
+function percentage2(id) {
+    var yearstart = list[0][id];
+    var yearend = list[list.length - 1][id];
+    return ((yearstart - yearend) / yearstart * -100);
+}
 function change(id) {
     var last = list.length - 1;
     var yearstart = list[0][id];
     var yearend = list[list.length - 1][id];
     document.getElementById("titleRegion").innerHTML = column[id];
-    document.getElementById("chart").style.height = percentage(last, id).toFixed(2) + "%";
+    document.getElementById("chart1").style.height = percentage1(last, id).toFixed(2) + "%";
+    document.getElementById("chart2").style.height = percentage2(id).toFixed(2) + "%";
     document.getElementById("emission_abs").innerHTML = list[last][id].toString() + "kg";
-    document.getElementById("emission_rel").innerHTML = percentage(last, id).toFixed(2) + "%";
+    document.getElementById("emission_rel").innerHTML = percentage1(last, id).toFixed(2) + "%";
     document.getElementById("growth_rate_rel").innerHTML = ((yearstart - yearend) / yearstart * -100).toFixed(2) + "%";
     document.getElementById("growth_rate_abs").innerHTML = (yearend - yearstart).toFixed(2) + "kg";
     document.title = "carbon emissions in " + column[id];
