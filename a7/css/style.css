@@ -1,0 +1,39 @@
+body {
+    background: #690000;
+}
+
+.drumpad{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 460px;
+    height: 460px;
+    transform: translate(-50%, -50%);
+}
+
+.button{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 5px 2px #000000;
+    border-radius: 15px;
+    display: inline-grid;
+}
+
+.tone{
+    background: #d3390b;
+}
+
+.drums{
+    background: #f1c01c;
+}
+
+.track{
+    background: #ad110c;
+}
+
+.drumpad img{
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
