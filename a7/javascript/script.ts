@@ -1,8 +1,8 @@
-var buttons: HTMLCollectionOf<Element> = document.getElementsByClassName("button");
-var sounds: string[] = ["hihat", "snare", "kick", "A", "C", "F", "G", "laugh-1", "laugh-2"]
+let buttons: HTMLCollectionOf<Element> = document.getElementsByClassName("button");
+let sounds: string[] = ["hihat", "snare", "kick", "A", "C", "F", "G", "laugh-1", "laugh-2"];
 
-setTimeout(buttonErstellen,100);
-function buttonErstellen():void {
+setTimeout(buttonErstellen, 100);
+function buttonErstellen(): void {
     for (let i: number = 0; i < 9; i++) {
         buttons[i].addEventListener("click", function (): void { playSample(sounds[i]); });
     }
@@ -10,21 +10,19 @@ function buttonErstellen():void {
 
 
 
-function playSample(name: string) {
-    var sound: HTMLAudioElement = new Audio("sounds/" + name + ".mp3");
+function playSample(name: string): void {
+    let sound: HTMLAudioElement = new Audio("sounds/" + name + ".mp3");
     sound.play();
 }
 
-function beat() {
-    var beat = ["kick", "snare", "snare", "kick", "kick", "snare", "hihat"];
-    var index = 0;
-    var delay = 330;
-    
+function beat(): void {
+    let beat: string[] = ["kick", "snare", "snare", "kick", "kick", "snare", "hihat"];
+    let delay: number[] = [300, 100, 1600, 100, 100, 100, 110];
+    let currentDelay: number = 0;
 
-    setInterval(function () {
-        if (index < beat.length) {
-            playSample(beat[index]);
-        index++;
-        }
-    }, delay);
-}
+    for (let i: number = 0; i < beat.length; i++) {
+        setTimeout(function (): void { playSample(beat[i]); }, currentDelay);
+        currentDelay += delay[i];
+    }
+
+
