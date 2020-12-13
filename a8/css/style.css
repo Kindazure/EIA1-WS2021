@@ -1,0 +1,67 @@
+body {
+    background: #000000;
+}
+
+.drumpad{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+
+.button{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-grid;
+}
+
+.tone{
+    background: #F80BFF;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FDADFF;
+    opacity: 0.5;
+}
+
+.tone:hover{
+    opacity: 1;
+}
+
+.drums{
+    background: #0BF4FF;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #B2FCFF;
+    opacity: 0.5;
+}
+
+.drums:hover{
+    opacity: 1;
+}
+
+.track{
+    background: #F3FA01;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FDFFBE;
+    opacity: 0.5;
+}
+
+.track:hover{
+    opacity: 1;
+}
+
+.drumpad img{
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.is-hidden{
+    display: none !important;
+}
