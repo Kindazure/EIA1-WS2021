@@ -27,7 +27,6 @@ function beat(): void {
     }
 
 //SWITCH PLAY PAUSE
-
 const playbtn: HTMLElement = document.getElementById("play");
 const pausebtn: HTMLElement= document.getElementById("pause")
 
@@ -43,3 +42,4 @@ function toggleClasses(firstHTMLElement: HTMLElement, secondHTMLElement: HTMLEle
     firstHTMLElement.classList.add("is-hidden");
     secondHTMLElement.classList.remove("is-hidden");
 }
+

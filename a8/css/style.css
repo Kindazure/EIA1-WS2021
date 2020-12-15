@@ -1,0 +1,78 @@
+body {
+    background: #FFFFFF;
+}
+
+.drumpad{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+
+.button{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-grid;
+}
+
+.tone{
+    background: #3f82f4;
+    opacity: 1;
+}
+
+.tone:hover{
+    opacity: 0.8;
+}
+
+.drums{
+    background: #dddddd;
+    opacity: 1;
+}
+
+.drums:hover{
+    opacity: 0.8;
+}
+
+.track{
+    background: #090000;
+    opacity: 1;
+}
+
+.track:hover{
+    opacity: 0.8;
+}
+
+.drumpad img{
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.icons{
+    position: absolute;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 10%;
+    color: #50f8fd;
+    
+}
+
+.is-hidden{
+    opacity: 0;
+    margin-left: -20px;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+}
+
+#sans {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+}
